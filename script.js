@@ -13,7 +13,13 @@ function range(start, end) {
 
     if (start <= end) {
         
-        for (let i = start; i <= end; ++i) {
+        for (
+            
+            let i = start; 
+            
+            i <= end; ++i
+        
+        ) {
 
             array.push(i);
 
@@ -25,7 +31,7 @@ function range(start, end) {
 
 };
 
-console.log(range(1, 20 ));
+console.log(range(1, 10));
 
 
 // 2. Next, write a sum function that takes an array of numbers and returns the sum of
@@ -35,6 +41,25 @@ console.log(range(1, 20 ));
 // Example output:
 
 // console.log(sum(range(1, 10))); // returns 55
+
+function sum(valueRange) {
+
+    for (
+        
+        let rowIndex = 0; 
+        
+        rowIndex < valueRange.length; 
+        
+        rowIndex++
+    )
+
+    //* for (let totalValue = 0; );
+
+    return valueRange[2];
+
+};
+
+console.log(sum(range(1, 10)));
 
 
 
