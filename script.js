@@ -17,7 +17,7 @@ function range(start, end) {
             
             let i = start; 
             
-            i <= end; ++i
+            i <= end; i++
         
         ) {
 
@@ -44,18 +44,23 @@ console.log(range(1, 10));
 
 function sum(valueRange) {
 
+    let totalValue = 0;
+
     for (
-        
-        let rowIndex = 0; 
-        
-        rowIndex < valueRange.length; 
-        
-        rowIndex++
-    )
 
-    //* for (let totalValue = 0; );
+        let i = 1; 
+        
+        i <= valueRange.length; 
+        
+        i++
 
-    return valueRange[2];
+    ) {
+
+        totalValue += i;
+
+    }
+
+    return totalValue;
 
 };
 
