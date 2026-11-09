@@ -93,3 +93,25 @@ console.log(sum(range(1, 10)));
 // reverseArrayInPlace(arrayValue);
 
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
+
+function reverseArray(arr) {
+        
+    arr.unshift(arr[0]);
+
+    arr.unshift(arr[2]);
+
+    arr.unshift(arr[4]);
+
+    const loop = 3;
+
+    for (let i = 0; i < loop; i++) {
+
+        arr.pop();
+
+    }
+
+    return arr;
+
+};
+
+console.log(reverseArray(["A", "B", "C"]));
